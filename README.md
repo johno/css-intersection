@@ -12,8 +12,13 @@ npm install --save css-intersection
 
 ## Usage
 
-```bash
-// ...
+```javascript
+var cssIntersection = require('css-intersection');
+
+cssIntersection(
+  'a { color: blue; text-decoration: none; }',
+  'a { color: blue; }'
+) // => 'a { text-decoration: none; }'
 ```
 
 ## License
